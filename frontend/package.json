@@ -1,0 +1,40 @@
+{
+  "name": "employee-portal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.cjs",
+    "build": "next build",
+    "start": "node server.cjs",
+    "test:proxy": "node --test test/proxy-integration.test.mjs",
+    "test:rbac": "node --test test/phase3-rbac.test.mjs",
+    "test:communities": "node --test test/phase4-community-management.test.mjs",
+    "test:phase5": "node --test test/phase5-agent-storage.test.mjs",
+    "test:otp": "node --test test/mobile-otp-auth.test.mjs",
+    "test:notifications": "node --test test/notification-client.test.mjs",
+    "test:mongodb": "node --test test/mongodb-initialization.test.mjs",
+    "test:compression": "node --test test/image-compression.test.mjs",
+    "test:agent-creation": "node --test test/agent-creation-error-handling.test.mjs",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@serwist/next": "^9.5.12",
+    "mongodb": "^6.21.0",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35",
+    "postcss": "^8.4.40",
+    "serwist": "^9.5.12",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4"
+  }
+}

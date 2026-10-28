@@ -1,0 +1,83 @@
+# Frontend dependencies, build artifacts and local secrets
+frontend/node_modules/
+frontend/.next/
+frontend/tsconfig.tsbuildinfo
+frontend/out/
+frontend/.env*
+!frontend/.env.example
+frontend/public/uploads/*
+!frontend/public/uploads/.gitkeep
+frontend/public/sw.js
+frontend/public/swe-worker*
+
+# Backend virtual environments, caches, bytecode and local secrets
+backend/.venv/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/.pytest_cache-root/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.env*
+!backend/.env.example
+backend/**/*.py[cod]
+
+# Common local files
+.DS_Store
+Thumbs.db
+
+# Root-level environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Python environments and test artifacts
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+
+# Node.js dependencies and build artifacts
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Local databases, dumps and backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+backups/
+
+# Explicit local environment files
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Python virtual environments
+backend/.venv/
+.venv/
+
+# Local scratch and generated test files (review before excluding)
+
+# Temporary frontend test copies
+frontend/.phase*/
+frontend/.phase*-test*/
+
+# Local data backups
+backend/data/locations/villages_pg_backup.json.gz
